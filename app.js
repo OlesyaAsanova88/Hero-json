@@ -1,7 +1,13 @@
 async function getResponse() {
+<<<<<<< HEAD
   let response = await fetch('dbHeroes.json')
   let content = await response.json()
   content = content.splice(0, 50)
+=======
+    let response = await fetch('dbHeroes.json')
+    let content = await response.json()
+    content = content.splice(0, 50)
+>>>>>>> 00fd5b1339169771cd00395cef6504876d14199d
 
   let list = document.querySelector('.cards')
   let key
