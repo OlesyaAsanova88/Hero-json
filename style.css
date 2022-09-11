@@ -17,11 +17,13 @@ img {
     position: relative;
     margin-top: 15px;
     box-shadow: 0 0 15px violet;
+   
 }
 
 .button-block {
     position: fixed;
     top: 300px;
+    z-index: 99;
 }
 
 .button {
@@ -33,5 +35,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0 0 15px violet;
-    
+    border-radius: 3px;
+}
+
+.hide{
+    display: none;
 }

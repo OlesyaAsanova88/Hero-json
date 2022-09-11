@@ -10,7 +10,7 @@ async function getResponse() {
   for (key in content) {
     heroes.innerHTML += `
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-          <div class="cards-block">
+          
             <div class="card">
               <img src="${content[key].photo}" width="260">
               <div class="card-body">
@@ -23,7 +23,7 @@ async function getResponse() {
                 </p>
               </div>
             </div>
-          </div>
+          
         </div>
         `
   }
@@ -47,7 +47,6 @@ async function getResponse() {
 
       } else {
         item.classList.remove('hide')
-
       }
     });
   }
