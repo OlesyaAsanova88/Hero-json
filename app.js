@@ -8,7 +8,7 @@ async function getResponse() {
   let key
 
   for (key in content) {
-    list.innerHTML += `
+    heroes.innerHTML += `
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
           <div class="cards-block">
             <div class="card">
@@ -32,8 +32,8 @@ async function getResponse() {
     return Math.floor(Math.random() * (max - min)) + min
   }
 
-  let heroAll = heroes.querySelectorAll('.card')
-  heroAll.forEach(el => {
+  const randomHero = heroes.querySelectorAll('.card')
+  randomHero.forEach(el => {
     el.classList.add(getRandomInt(1, 4))
   })
 
@@ -55,7 +55,7 @@ async function getResponse() {
   buttons.forEach(button => {
     button.addEventListener('click', () => {
       const currentCategory = button.dataset.filter
-      filter(currentCategory, heroAll)
+      filter(currentCategory, randomHero)
     })
   })
 
